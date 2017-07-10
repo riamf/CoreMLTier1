@@ -13,6 +13,8 @@
 		7219BF191F13D84B009D0154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7219BF181F13D84B009D0154 /* Assets.xcassets */; };
 		7219BF1C1F13D84B009D0154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7219BF1A1F13D84B009D0154 /* LaunchScreen.storyboard */; };
 		7219BF271F13D84B009D0154 /* CoreMLTier1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF261F13D84B009D0154 /* CoreMLTier1Tests.swift */; };
+		7219BF371F13DC92009D0154 /* CameraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF361F13DC92009D0154 /* CameraType.swift */; };
+		7219BF391F13DD07009D0154 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF381F13DD07009D0154 /* Video.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,10 @@
 		7219BF221F13D84B009D0154 /* CoreMLTier1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreMLTier1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7219BF261F13D84B009D0154 /* CoreMLTier1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLTier1Tests.swift; sourceTree = "<group>"; };
 		7219BF281F13D84B009D0154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7219BF321F13DB9A009D0154 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		7219BF331F13DBA7009D0154 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		7219BF361F13DC92009D0154 /* CameraType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraType.swift; sourceTree = "<group>"; };
+		7219BF381F13DD07009D0154 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 				7219BF101F13D84B009D0154 /* CoreMLTier1 */,
 				7219BF251F13D84B009D0154 /* CoreMLTier1Tests */,
 				7219BF0F1F13D84B009D0154 /* Products */,
+				7219BF311F13DB9A009D0154 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +84,9 @@
 		7219BF101F13D84B009D0154 /* CoreMLTier1 */ = {
 			isa = PBXGroup;
 			children = (
+				7219BF351F13DBC5009D0154 /* Video */,
+				7219BF341F13DBB5009D0154 /* ViewController */,
 				7219BF111F13D84B009D0154 /* AppDelegate.swift */,
-				7219BF131F13D84B009D0154 /* ViewController.swift */,
 				7219BF151F13D84B009D0154 /* Main.storyboard */,
 				7219BF181F13D84B009D0154 /* Assets.xcassets */,
 				7219BF1A1F13D84B009D0154 /* LaunchScreen.storyboard */,
@@ -94,6 +102,32 @@
 				7219BF281F13D84B009D0154 /* Info.plist */,
 			);
 			path = CoreMLTier1Tests;
+			sourceTree = "<group>";
+		};
+		7219BF311F13DB9A009D0154 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7219BF331F13DBA7009D0154 /* CoreML.framework */,
+				7219BF321F13DB9A009D0154 /* Vision.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7219BF341F13DBB5009D0154 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7219BF131F13D84B009D0154 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7219BF351F13DBC5009D0154 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				7219BF361F13DC92009D0154 /* CameraType.swift */,
+				7219BF381F13DD07009D0154 /* Video.swift */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7219BF141F13D84B009D0154 /* ViewController.swift in Sources */,
+				7219BF391F13DD07009D0154 /* Video.swift in Sources */,
 				7219BF121F13D84B009D0154 /* AppDelegate.swift in Sources */,
+				7219BF371F13DC92009D0154 /* CameraType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
