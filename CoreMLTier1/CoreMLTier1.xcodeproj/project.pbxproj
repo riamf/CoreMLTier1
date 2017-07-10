@@ -15,6 +15,12 @@
 		7219BF271F13D84B009D0154 /* CoreMLTier1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF261F13D84B009D0154 /* CoreMLTier1Tests.swift */; };
 		7219BF371F13DC92009D0154 /* CameraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF361F13DC92009D0154 /* CameraType.swift */; };
 		7219BF391F13DD07009D0154 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF381F13DD07009D0154 /* Video.swift */; };
+		7219BF401F13EBCD009D0154 /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF3F1F13EBCD009D0154 /* Detector.swift */; };
+		7219BF411F13EC36009D0154 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF3D1F13EB4E009D0154 /* SqueezeNet.mlmodel */; };
+		7219BF431F13EED8009D0154 /* SqueezeNetDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF421F13EED8009D0154 /* SqueezeNetDetector.swift */; };
+		7219BF461F13F193009D0154 /* CVPixelBuffer+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF451F13F193009D0154 /* CVPixelBuffer+Resize.swift */; };
+		7219BF481F13F4AF009D0154 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF471F13F4A9009D0154 /* Inceptionv3.mlmodel */; };
+		7219BF4A1F13F4C9009D0154 /* Inceptionv3Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF491F13F4C9009D0154 /* Inceptionv3Detector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,12 @@
 		7219BF331F13DBA7009D0154 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		7219BF361F13DC92009D0154 /* CameraType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraType.swift; sourceTree = "<group>"; };
 		7219BF381F13DD07009D0154 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		7219BF3D1F13EB4E009D0154 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		7219BF3F1F13EBCD009D0154 /* Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
+		7219BF421F13EED8009D0154 /* SqueezeNetDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqueezeNetDetector.swift; sourceTree = "<group>"; };
+		7219BF451F13F193009D0154 /* CVPixelBuffer+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Resize.swift"; sourceTree = "<group>"; };
+		7219BF471F13F4A9009D0154 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		7219BF491F13F4C9009D0154 /* Inceptionv3Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inceptionv3Detector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +96,9 @@
 		7219BF101F13D84B009D0154 /* CoreMLTier1 */ = {
 			isa = PBXGroup;
 			children = (
+				7219BF441F13F182009D0154 /* Utils */,
+				7219BF3E1F13EB6E009D0154 /* Detectors */,
+				7219BF3A1F13EAFD009D0154 /* Model */,
 				7219BF351F13DBC5009D0154 /* Video */,
 				7219BF341F13DBB5009D0154 /* ViewController */,
 				7219BF111F13D84B009D0154 /* AppDelegate.swift */,
@@ -128,6 +143,33 @@
 				7219BF381F13DD07009D0154 /* Video.swift */,
 			);
 			path = Video;
+			sourceTree = "<group>";
+		};
+		7219BF3A1F13EAFD009D0154 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7219BF471F13F4A9009D0154 /* Inceptionv3.mlmodel */,
+				7219BF3D1F13EB4E009D0154 /* SqueezeNet.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7219BF3E1F13EB6E009D0154 /* Detectors */ = {
+			isa = PBXGroup;
+			children = (
+				7219BF3F1F13EBCD009D0154 /* Detector.swift */,
+				7219BF421F13EED8009D0154 /* SqueezeNetDetector.swift */,
+				7219BF491F13F4C9009D0154 /* Inceptionv3Detector.swift */,
+			);
+			path = Detectors;
+			sourceTree = "<group>";
+		};
+		7219BF441F13F182009D0154 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7219BF451F13F193009D0154 /* CVPixelBuffer+Resize.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,10 +273,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7219BF401F13EBCD009D0154 /* Detector.swift in Sources */,
+				7219BF481F13F4AF009D0154 /* Inceptionv3.mlmodel in Sources */,
+				7219BF411F13EC36009D0154 /* SqueezeNet.mlmodel in Sources */,
+				7219BF431F13EED8009D0154 /* SqueezeNetDetector.swift in Sources */,
 				7219BF141F13D84B009D0154 /* ViewController.swift in Sources */,
 				7219BF391F13DD07009D0154 /* Video.swift in Sources */,
 				7219BF121F13D84B009D0154 /* AppDelegate.swift in Sources */,
 				7219BF371F13DC92009D0154 /* CameraType.swift in Sources */,
+				7219BF4A1F13F4C9009D0154 /* Inceptionv3Detector.swift in Sources */,
+				7219BF461F13F193009D0154 /* CVPixelBuffer+Resize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,11 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet private weak var preview: UIView!
     
     private var video: Video!
+    private var detector: Detector = Inceptionv3Detector()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initalizeVideo()
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -45,6 +45,14 @@ class ViewController: UIViewController {
         
         video = Video(camera: .back,
                       previewLayer: preview.layer)
+        
+        video.videoHandler = { [unowned self] buffer in
+            self.detector.handleDetection(buffer,
+                                          completion: { [weak self] (result, probability) in
+                                            guard probability > 0.2 else { return }
+                                            self?.infoLabel.text = result
+            })
+        }
     }
 
 }

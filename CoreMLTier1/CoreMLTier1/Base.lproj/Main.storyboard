@@ -24,19 +24,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6DN-JT-JGE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew0-tU-ZUG">
-                                        <rect key="frame" x="8" y="667" width="359" height="0.0"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew0-tU-ZUG">
+                                        <rect key="frame" x="8" y="667" width="367" height="0.0"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="ew0-tU-ZUG" firstAttribute="leading" secondItem="6DN-JT-JGE" secondAttribute="leadingMargin" id="8nQ-c3-AZQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="ew0-tU-ZUG" secondAttribute="trailing" constant="8" id="inw-BW-bCm"/>
-                                    <constraint firstItem="ew0-tU-ZUG" firstAttribute="bottom" secondItem="6DN-JT-JGE" secondAttribute="bottom" id="smX-C9-JFc"/>
+                                    <constraint firstItem="ew0-tU-ZUG" firstAttribute="leading" secondItem="6DN-JT-JGE" secondAttribute="leading" constant="8" id="8nQ-c3-AZQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ew0-tU-ZUG" secondAttribute="trailing" id="inw-BW-bCm"/>
+                                    <constraint firstItem="ew0-tU-ZUG" firstAttribute="bottom" secondItem="6DN-JT-JGE" secondAttribute="bottomMargin" constant="8" id="smX-C9-JFc"/>
                                 </constraints>
                             </view>
                         </subviews>
