@@ -25,17 +25,35 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew0-tU-ZUG">
-                                        <rect key="frame" x="8" y="667" width="367" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="667" width="0.0" height="0.0"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHG-hD-yyk">
+                                        <rect key="frame" x="353" y="645" width="22" height="22"/>
+                                        <connections>
+                                            <action selector="showSettings" destination="BYZ-38-t0r" eventType="touchUpInside" id="q0W-Bf-jN8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u30-uq-w9n" userLabel="DetectorName">
+                                        <rect key="frame" x="16" y="28" width="343" height="0.0"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="ew0-tU-ZUG" firstAttribute="leading" secondItem="6DN-JT-JGE" secondAttribute="leading" constant="8" id="8nQ-c3-AZQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="ew0-tU-ZUG" secondAttribute="trailing" id="inw-BW-bCm"/>
+                                    <constraint firstAttribute="trailing" secondItem="aHG-hD-yyk" secondAttribute="trailing" id="2t4-Bn-KYV"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="u30-uq-w9n" secondAttribute="trailing" constant="8" id="8jM-EB-cUW"/>
+                                    <constraint firstItem="ew0-tU-ZUG" firstAttribute="leading" secondItem="6DN-JT-JGE" secondAttribute="leading" id="8nQ-c3-AZQ"/>
+                                    <constraint firstItem="u30-uq-w9n" firstAttribute="top" secondItem="6DN-JT-JGE" secondAttribute="topMargin" id="Boi-sH-aix"/>
+                                    <constraint firstItem="ew0-tU-ZUG" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="aHG-hD-yyk" secondAttribute="leading" id="TNq-f1-8fR"/>
+                                    <constraint firstItem="u30-uq-w9n" firstAttribute="leading" secondItem="6DN-JT-JGE" secondAttribute="leadingMargin" constant="8" id="bNx-QH-Yt4"/>
+                                    <constraint firstAttribute="bottom" secondItem="aHG-hD-yyk" secondAttribute="bottom" id="ooN-i6-7jU"/>
                                     <constraint firstItem="ew0-tU-ZUG" firstAttribute="bottom" secondItem="6DN-JT-JGE" secondAttribute="bottomMargin" constant="8" id="smX-C9-JFc"/>
                                 </constraints>
                             </view>
@@ -49,6 +67,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="detectorName" destination="u30-uq-w9n" id="VqG-ad-WQ8"/>
                         <outlet property="infoLabel" destination="ew0-tU-ZUG" id="ILp-0B-68j"/>
                         <outlet property="preview" destination="6DN-JT-JGE" id="5Yy-N2-pAc"/>
                     </connections>

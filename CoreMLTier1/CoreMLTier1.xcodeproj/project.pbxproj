@@ -17,10 +17,16 @@
 		7219BF391F13DD07009D0154 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF381F13DD07009D0154 /* Video.swift */; };
 		7219BF401F13EBCD009D0154 /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF3F1F13EBCD009D0154 /* Detector.swift */; };
 		7219BF411F13EC36009D0154 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF3D1F13EB4E009D0154 /* SqueezeNet.mlmodel */; };
-		7219BF431F13EED8009D0154 /* SqueezeNetDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF421F13EED8009D0154 /* SqueezeNetDetector.swift */; };
 		7219BF461F13F193009D0154 /* CVPixelBuffer+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF451F13F193009D0154 /* CVPixelBuffer+Resize.swift */; };
 		7219BF481F13F4AF009D0154 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF471F13F4A9009D0154 /* Inceptionv3.mlmodel */; };
-		7219BF4A1F13F4C9009D0154 /* Inceptionv3Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF491F13F4C9009D0154 /* Inceptionv3Detector.swift */; };
+		7219BF4D1F15274C009D0154 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219BF4C1F15274C009D0154 /* ModelType.swift */; };
+		72AC46AC1F15332A00121586 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC46AB1F15332A00121586 /* SettingsViewController.swift */; };
+		72AC46AE1F15342700121586 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC46AD1F15342700121586 /* UIView+Extensions.swift */; };
+		72AC46B11F15367100121586 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC46B01F15367100121586 /* SettingsViewModel.swift */; };
+		72AC46B51F15452F00121586 /* VGG16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 72AC46B31F15452800121586 /* VGG16.mlmodel */; };
+		72AC46B61F1546B300121586 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 72AC46B41F15452800121586 /* Resnet50.mlmodel */; };
+		72AC46B71F1546B700121586 /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 72AC46B21F15452800121586 /* GoogLeNetPlaces.mlmodel */; };
+		72AC46BA1F16886400121586 /* SettingsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AC46B91F16886400121586 /* SettingsCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +56,16 @@
 		7219BF381F13DD07009D0154 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		7219BF3D1F13EB4E009D0154 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 		7219BF3F1F13EBCD009D0154 /* Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
-		7219BF421F13EED8009D0154 /* SqueezeNetDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqueezeNetDetector.swift; sourceTree = "<group>"; };
 		7219BF451F13F193009D0154 /* CVPixelBuffer+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Resize.swift"; sourceTree = "<group>"; };
 		7219BF471F13F4A9009D0154 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
-		7219BF491F13F4C9009D0154 /* Inceptionv3Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inceptionv3Detector.swift; sourceTree = "<group>"; };
+		7219BF4C1F15274C009D0154 /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		72AC46AB1F15332A00121586 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		72AC46AD1F15342700121586 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		72AC46B01F15367100121586 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		72AC46B21F15452800121586 /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
+		72AC46B31F15452800121586 /* VGG16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VGG16.mlmodel; sourceTree = "<group>"; };
+		72AC46B41F15452800121586 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		72AC46B91F16886400121586 /* SettingsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +143,10 @@
 		7219BF341F13DBB5009D0154 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				72AC46B81F16885100121586 /* Views */,
+				72AC46AF1F15366400121586 /* ViewModels */,
 				7219BF131F13D84B009D0154 /* ViewController.swift */,
+				72AC46AB1F15332A00121586 /* SettingsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -148,6 +163,9 @@
 		7219BF3A1F13EAFD009D0154 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				72AC46B31F15452800121586 /* VGG16.mlmodel */,
+				72AC46B41F15452800121586 /* Resnet50.mlmodel */,
+				72AC46B21F15452800121586 /* GoogLeNetPlaces.mlmodel */,
 				7219BF471F13F4A9009D0154 /* Inceptionv3.mlmodel */,
 				7219BF3D1F13EB4E009D0154 /* SqueezeNet.mlmodel */,
 			);
@@ -157,9 +175,8 @@
 		7219BF3E1F13EB6E009D0154 /* Detectors */ = {
 			isa = PBXGroup;
 			children = (
+				7219BF4B1F152738009D0154 /* Protocols */,
 				7219BF3F1F13EBCD009D0154 /* Detector.swift */,
-				7219BF421F13EED8009D0154 /* SqueezeNetDetector.swift */,
-				7219BF491F13F4C9009D0154 /* Inceptionv3Detector.swift */,
 			);
 			path = Detectors;
 			sourceTree = "<group>";
@@ -168,8 +185,33 @@
 			isa = PBXGroup;
 			children = (
 				7219BF451F13F193009D0154 /* CVPixelBuffer+Resize.swift */,
+				72AC46AD1F15342700121586 /* UIView+Extensions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		7219BF4B1F152738009D0154 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7219BF4C1F15274C009D0154 /* ModelType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		72AC46AF1F15366400121586 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				72AC46B01F15367100121586 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		72AC46B81F16885100121586 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72AC46B91F16886400121586 /* SettingsCellView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,16 +315,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72AC46B61F1546B300121586 /* Resnet50.mlmodel in Sources */,
 				7219BF401F13EBCD009D0154 /* Detector.swift in Sources */,
 				7219BF481F13F4AF009D0154 /* Inceptionv3.mlmodel in Sources */,
 				7219BF411F13EC36009D0154 /* SqueezeNet.mlmodel in Sources */,
-				7219BF431F13EED8009D0154 /* SqueezeNetDetector.swift in Sources */,
 				7219BF141F13D84B009D0154 /* ViewController.swift in Sources */,
+				72AC46AE1F15342700121586 /* UIView+Extensions.swift in Sources */,
 				7219BF391F13DD07009D0154 /* Video.swift in Sources */,
+				7219BF4D1F15274C009D0154 /* ModelType.swift in Sources */,
 				7219BF121F13D84B009D0154 /* AppDelegate.swift in Sources */,
 				7219BF371F13DC92009D0154 /* CameraType.swift in Sources */,
-				7219BF4A1F13F4C9009D0154 /* Inceptionv3Detector.swift in Sources */,
+				72AC46B51F15452F00121586 /* VGG16.mlmodel in Sources */,
+				72AC46B71F1546B700121586 /* GoogLeNetPlaces.mlmodel in Sources */,
 				7219BF461F13F193009D0154 /* CVPixelBuffer+Resize.swift in Sources */,
+				72AC46BA1F16886400121586 /* SettingsCellView.swift in Sources */,
+				72AC46AC1F15332A00121586 /* SettingsViewController.swift in Sources */,
+				72AC46B11F15367100121586 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +554,7 @@
 				7219BF2D1F13D84B009D0154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7219BF2E1F13D84B009D0154 /* Build configuration list for PBXNativeTarget "CoreMLTier1Tests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +563,7 @@
 				7219BF301F13D84B009D0154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
