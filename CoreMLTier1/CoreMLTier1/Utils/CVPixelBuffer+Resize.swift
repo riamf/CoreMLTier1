@@ -15,7 +15,7 @@ extension CVPixelBuffer {
         let imageSide = size
         var ciImage = CIImage(cvPixelBuffer: self, options: nil)
         let transform = CGAffineTransform(scaleX: CGFloat(imageSide) / CGFloat(CVPixelBufferGetWidth(self)), y: CGFloat(imageSide) / CGFloat(CVPixelBufferGetHeight(self)))
-        ciImage = ciImage.applying(transform).cropping(to: CGRect(x: 0, y: 0, width: imageSide, height: imageSide))
+        ciImage = ciImage.transformed(by: transform).cropped(to: CGRect(x: 0, y: 0, width: imageSide, height: imageSide))
         let ciContext = CIContext()
         var resizeBuffer: CVPixelBuffer?
         CVPixelBufferCreate(kCFAllocatorDefault, imageSide, imageSide, CVPixelBufferGetPixelFormatType(self), nil, &resizeBuffer)
